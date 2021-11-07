@@ -1,0 +1,15 @@
+.app {
+  max-width: 1077px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
