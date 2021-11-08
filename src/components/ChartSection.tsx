@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Area, CartesianGrid, Line, LineChart, Tooltip, XAxis, ResponsiveContainer}} from 'recharts';
+import {Area, CartesianGrid, Line, LineChart, Tooltip, XAxis, ResponsiveContainer} from 'recharts';
 import {fetchBitcoinHistoricalPrice} from "../service/fetchBitcoinhistoricalPrice";
 import {DATA_FETCH_FREQUENCY} from "../App";
 
