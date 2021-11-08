@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Area, CartesianGrid, Line, LineChart, Tooltip, XAxis} from 'recharts';
+import {Area, CartesianGrid, Line, LineChart, Tooltip, XAxis, ResponsiveContainer}} from 'recharts';
 import {fetchBitcoinHistoricalPrice} from "../service/fetchBitcoinhistoricalPrice";
 import {DATA_FETCH_FREQUENCY} from "../App";
 
@@ -39,7 +39,7 @@ const ChartSection: React.FC<props> = ({selectedCurrency}: props): JSX.Element =
     }
 
     return (
-        <div>
+        <ResponsiveContainer width={"100%"} aspect={1}>
             <LineChart
                 width={800}
                 height={500}
@@ -58,7 +58,7 @@ const ChartSection: React.FC<props> = ({selectedCurrency}: props): JSX.Element =
                     fill='#8884d8'
                 />
             </LineChart>
-        </div>
+        </ResponsiveContainer>
     );
 };
 
